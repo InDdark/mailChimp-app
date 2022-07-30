@@ -62,7 +62,7 @@ app.post('/', (req, res) => {
     const lname = req.body.lname;
     const email = req.body.email;
     // const url = "https://us9.api.mailchimp.com/3.0/lists/" + "0e093d1a4f" + "/members";
-    const listId = "0e093d1a4fh";
+    const listId = "0e093d1a4f";
     const subscribingUser = {
     firstName: fname,
     lastName: lname,
