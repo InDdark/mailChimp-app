@@ -15,8 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 mailchimp.setConfig({
-    apiKey: 'a70ecf2917f50c7167eaec0eb2f768f1-us9',
-    server: 'us9',
+    apiKey: 'YOUR_API_KEY',
+    server: 'YOUR_SERVER',
   });
 
 // app.use(express.static("/   public"));
@@ -25,8 +25,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })
 
-// key: a70ecf2917f50c7167eaec0eb2f768f1-us9
-// id: 0e093d1a4f
+
 
 async function run(listId, subscribingUser) {
     const response = await mailchimp.lists.addListMember(listId, {
